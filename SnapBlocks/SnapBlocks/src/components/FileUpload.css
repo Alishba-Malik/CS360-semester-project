@@ -1,0 +1,143 @@
+/* Container for FileUpload */
+.file-upload-container {
+    background: rgba(255, 255, 255, 0.2); /* Lighter semi-transparent panel */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border for depth */
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for a more modern look */
+    width: 400px;
+    backdrop-filter: blur(10px); /* Smooth glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated hover effect */
+  }
+  /* Folder Section Styling */
+  .folder-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .folder-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #fff;
+    color: black;
+  }
+    /* Dropdown Select */
+  .folder-select{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #fff;
+    color: black;
+  }
+  
+  .folder-button {
+    background: #1d2671;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .folder-button:hover {
+    background: #c33764;
+  }
+  
+  /* Folder List */
+  .folders-list {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .folder-item {
+    background: #1d2671;
+    color: white;
+    padding: 8px;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 40%;
+  }
+  
+  /* File Upload Section */
+  .file-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .file-input-label {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #c33764, #1d2671); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+  }
+  
+  .file-input-label:hover {
+    background: linear-gradient(90deg, #1d2671, #c33764);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-name-display {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  
+  .file-upload-button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #c33764, #1d2671); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+  }
+  
+  .file-upload-button:hover {
+    background: linear-gradient(90deg, #1d2671, #c33764);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* General Spacing */
+  .margin-bottom {
+    margin-bottom: 15px;
+  }
+  .delete-button {
+    background: #c33764;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .delete-button:hover {
+    background: #1d2671;
+  }
+  

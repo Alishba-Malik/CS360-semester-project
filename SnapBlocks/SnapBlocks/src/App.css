@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow: hidden; /* Hide overflow by default */
+  overflow-y: auto; /* Make content scrollable */
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  display: flex; /* Arrange elements in a row */
+  align-items: center; /* Vertically align items */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 10px; /* Space between logo and title */
+  margin: 20px; /* Add margin to position from the edges */
+  position: fixed; /* Positioning at the top-left */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure navbar stays above content */
+  width: 100%; 
+}
+
+.logo {
+  width: 70px; /* Adjust logo size */
+  height: 50px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0; /* Remove any default margin */
+}
+
+.wallet-info {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #f4f4f9;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* navbar */
+/* Navbar Horizontal Styling */
+/* Navbar Horizontal Styling */
+.navbar-horizontal {
+  display: flex;              /* Use flexbox for horizontal layout */
+  align-items: center;        /* Vertically center the items */
+  gap: 20px;                  /* Spacing between navbar items */
+  margin-left: 20px;          /* Space between logo and navbar */
+  list-style: none;           /* Remove default list styles */
+  padding: 0;                 /* Remove default padding */
+}
+
+.nav-item {
+  display: inline-block;      /* Ensures nav items are inline */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: white;               /* Default link color */
+  text-decoration: none;      /* Remove underlines */
+  padding: 10px 15px;         /* Spacing inside the link */
+  transition: transform 0.3s ease, padding 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-item .nav-link:focus, 
+.nav-item .nav-link:hover {
+  transform: translateX(10px); /* Move the link to the right on hover */
+  padding-left: 25px;  
+  color: rgb(218, 51, 162);        /* Increase left padding on hover */
+}
+/* Homepage Styles */
+.home-page {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  color: #c33764;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Buttons */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  background-color:#1d2671;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color:  #c33764;
+}
+
+
+
+

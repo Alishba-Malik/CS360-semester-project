@@ -1,0 +1,77 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .login-panel {
+    background: rgba(255, 255, 255, 0.2); /* Lighter semi-transparent panel */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border for depth */
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for a more modern look */
+    width: 400px;
+    backdrop-filter: blur(10px); /* Smooth glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated hover effect */
+  }
+  
+  .login-panel:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Bright white for the title */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Glow effect for the title */
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #dcdcdc; /* Softer gray for better contrast */
+  }
+  
+  .connect-wallet-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #c33764, #1d2671); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+  }
+  
+  .connect-wallet-btn:hover {
+    background: linear-gradient(90deg, #1d2671, #c33764); /* Reverse gradient on hover */
+    transform: scale(1.08); /* Slight scale effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+  }
+  
+  .error {
+    color: #ff6f6f; /* Slightly muted red for errors */
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+    background: rgba(255, 0, 0, 0.1); /* Light red background for emphasis */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Border matching the error color */
+  }
+  
+  .login-image {
+   
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Animated effect */
+  }
+  
+  .login-image:hover {
+    transform: scale(1.1); 
+  }

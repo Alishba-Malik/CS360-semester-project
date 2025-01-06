@@ -1,0 +1,76 @@
+/* Container for AccessControl */
+.access-control-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deep shadow */
+    width: 550px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated hover */
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+/* File Select Styling */
+select, input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    width: 70%;
+    background-color: #fff;
+    color: black;
+    margin-bottom: 15px;
+}
+
+select:focus, input:focus {
+    border-color: #1d2671; /* Focus border color */
+}
+
+/* Grant Access Button */
+button {
+    background: #c33764;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background:  #1d2671; /* Hover effect */
+}
+
+/* Users List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Empty state message */
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* Loading and Error Messages */
+.loading, .error-message {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .snapblocks-container, .access-control-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    li {
+        width: 80%;
+    }
+}

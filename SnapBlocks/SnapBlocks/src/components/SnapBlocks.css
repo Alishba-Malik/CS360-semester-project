@@ -1,0 +1,141 @@
+/* Container for MySnapBlocks */
+.snapblocks-container {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
+  border-radius: 18px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deep shadow */
+  width: 100%; /* Make it responsive */
+  max-width: 600px; /* Max width for large screens */
+  backdrop-filter: blur(10px); /* Glass effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated hover */
+
+  position: absolute; /* Position relative to the parent or body */
+  top: 100px; /* Distance below the navbar */
+  bottom: 50px; /* Distance above the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Horizontal centering adjustment */
+
+  color: #ffffff;
+  overflow: hidden; /* Hide overflow by default */
+  max-height: calc(100vh - 150px); /* Ensures it doesn’t overlap the navbar or bottom */
+  overflow-y: auto; /* Make content scrollable */
+}
+
+
+  
+  /* File List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Add a max-height to the list */
+    overflow-y: auto; /* Make the list scrollable if content overflows */
+  }
+  
+  li {
+    background: #1d2671;
+    color: white;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 180px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  li:hover {
+    background: #c33764; /* Hover color change */
+  }
+  
+  li:active {
+    transform: scale(0.98); /* Click effect */
+  }
+  
+  /* Input and Button Styling */
+  .access-input {
+    margin-bottom: 20px;
+  }
+  
+  .access-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #fff;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: #1d2671;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #c33764; /* Hover color change */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Loading state */
+  .loading {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Adjust padding and width for smaller screens */
+    .snapblocks-container {
+      padding: 20px;
+      width: 90%; /* Decrease width to fit smaller screens */
+      max-height: calc(100vh - 130px); /* Adjust for smaller screen height */
+    }
+  
+    .access-input input {
+      width: 100%; /* Make the input take full width */
+    }
+  
+    button {
+      width: 100%; /* Make button full-width */
+      padding: 10px; /* Adjust button padding */
+    }
+  
+    ul {
+      max-height: 250px; /* Decrease max-height for smaller screens */
+    }
+  }
+  
+  /* Additional responsive styles for mobile */
+  @media screen and (max-width: 480px) {
+    /* Further reduce padding for mobile */
+    .snapblocks-container {
+      padding: 15px;
+    }
+  
+    .access-input input,
+    button {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    li {
+      padding: 10px; /* Adjust padding for list items */
+    }
+  
+    .error-message {
+      font-size: 0.9rem; /* Smaller font size for error messages */
+    }
+  }
+  
